@@ -13,15 +13,15 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Soft orange: hsl(35, 77%, 62%)
-- Soft red: hsl(5, 85%, 63%)
+- Soft orange: #e9ab53
+- Soft red: #f15e50
 
 ### Neutral
 
-Off-white: hsl(36, 100%, 99%)
-Grayish blue: hsl(233, 8%, 79%)
-Dark grayish blue: hsl(236, 13%, 42%)
-Very dark blue: hsl(240, 100%, 5%)
+Off-white: #fffdfa
+Grayish blue: #c5c6ce
+Dark grayish blue: #5d5f79
+Very dark blue: #00001a
 
 ## Typography
 
