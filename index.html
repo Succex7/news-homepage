@@ -10,9 +10,16 @@
 <body>
     <header class="header-container">
         <div class="logo">
-            <img src="asset/images/logo.svg" alt="">
+            <img src="asset/images/logo.svg" alt="News Homepage Logo">
         </div>
-        <nav>
+
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
             <ul class="nav-items">
                <li class="nav-item">Home</li>
                <li class="nav-item">New</li>
@@ -27,7 +34,7 @@
         <section class="hero-container">
             <div class="img-wrapper">
                 <!-- box1 -->
-                <img src="asset/images/image-web-3-desktop.jpg">
+                <img src="asset/images/image-web-3-desktop.jpg" alt="Web 3.0 Image" class="hero-img">
             </div>
             <!-- box2 -->
             <div class="new-card-wrapper">
@@ -76,12 +83,12 @@
             <!-- card-1 -->
             <div class="rating-card">
                 <div class="image-wrapper">
-                    <img class="rating-img" src="asset/images/image-retro-pcs.jpg">
+                    <img class="rating-img" src="asset/images/image-retro-pcs.jpg" alt="Retro PCs">
                 </div>
                 <div class="rating-text">
                     <h2 class="rating-h2">01</h2>
                     <h4 class="rating-h4">Reviving Retro pCs</h4>
-                    <p class="rating-p">waht happend when old PCs are given morder upgrade?</p>
+                    <p class="rating-p">what happened when old PCs are given modern upgrade?</p>
 
                 </div>
             </div>    
@@ -89,7 +96,7 @@
                 <!-- card-2 -->
             <div class="rating-card">
                 <div class="image-wrapper">
-                    <img class="rating-img" src="asset/images/image-top-laptops.jpg">
+                    <img class="rating-img" src="asset/images/image-top-laptops.jpg" alt="Top Laptops">
                 </div>
                 <div class="rating-text">
                     <h2 class="rating-h2">02</h2>
@@ -103,7 +110,7 @@
 
             <div class="rating-card">
                 <div class="image-wrapper">
-                    <img class="rating-img" src="asset/images/image-gaming-growth.jpg">
+                    <img class="rating-img" src="asset/images/image-gaming-growth.jpg" alt="Gaming Growth">
                 </div>
                 <div class="rating-text">
                     <h2 class="rating-h2">03</h2>
@@ -115,6 +122,6 @@
         </section>
     </main>
     
-    
+    <script src="script.js"></script>
 </body>
 </html>
