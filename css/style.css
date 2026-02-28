@@ -177,9 +177,10 @@
 .menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: #22232e;
+    background-color: #e6a03e;
     transition: 0.3s;
     border-radius: 2px;
+    z-index: 1000;
 }
 
 .menu-toggle.active span:nth-child(1) {
