@@ -42,6 +42,7 @@
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr  ;
     gap: 20px;
+    
 }
 
 .img-wrapper img{
@@ -58,6 +59,7 @@
     grid-row: span 2;
     background-color: #00001a;
     padding: 20px;
+    width: 20rem;
    
 }
 .new{
