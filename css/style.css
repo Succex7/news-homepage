@@ -138,10 +138,16 @@
 
 .rating-card{
     display: flex;
+<<<<<<< HEAD
+    gap: 10px;  
+    align-items: start;
+}   
+=======
     gap: 20px;
     padding: 20px;
     flex-basis: 30%;
 }
+>>>>>>> c2a7a55fa71f41e26db50f3dbc00ceea452d8ba6
 
 .rating-img{
     height: 140px;
