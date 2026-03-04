@@ -163,8 +163,9 @@
 
 .rating-text{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;   
+    height: 140px;
 }
 
 .rating-h2 {
@@ -183,7 +184,7 @@
     font-size: 15px;
     color:  #5d5f79;
 }
- */
+ 
 
 
 /* Hamburger Menu Button */
