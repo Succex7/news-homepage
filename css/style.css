@@ -49,9 +49,7 @@ body{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
     gap: 25px;
-    /* max-width: 1100px; */
     margin: 0 auto;
-    
 }
 
 .img-wrapper img{
@@ -148,14 +146,13 @@ body{
 .rating-container{
     display: flex;
     padding: 40px;
-    /* max-width: 1100px; */
     margin: 0 auto;
+    margin-top: -1em;
 }   
 
 .rating-card{
     display: flex;
-    gap: 10px;  
-    align-items: start;
+    gap: 25px;  
 }   
 
 .rating-img{
@@ -166,7 +163,7 @@ body{
 
 .rating-text{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;   
 }
 
@@ -177,16 +174,24 @@ body{
     
 }
 
-.rating-h4{
-    font-size: 21px;
-  
+.rating-h4 a{
+    font-size: 18px;
+    color: #00001a;
+    text-decoration: none;
+
+}
+
+.rating-h4:hover a {
+    color: #f15e50;
+    transition: 0.3s;
 }
 
 .rating-p{
     font-size: 15px;
     color:  #5d5f79;
+    width: 270px;
 }
- */
+
 
 
 /* Hamburger Menu Button */
