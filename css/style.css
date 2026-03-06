@@ -17,8 +17,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    /* max-width: 1100px; */
+    padding: 20px 70px 20px 40px;
     margin: 0 auto;
 }
 
@@ -53,9 +52,9 @@ body{
 }
 
 .img-wrapper img{
-    width: 51.5rem;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    height: 19rem;
 }
 
 .img-wrapper{
@@ -100,7 +99,7 @@ body{
     grid-column: 1;
     grid-row: 2;
     display: flex;
-    margin-top: -10rem;
+    margin-top: -9rem;
     justify-content: space-between;
 }
 
@@ -209,7 +208,7 @@ body{
 .menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: #e6a03e;
+    background-color: #00001a;
     transition: 0.3s;
     border-radius: 2px;
     z-index: 1000;
@@ -232,11 +231,13 @@ body{
     display: flex;
 }
 
-/* Mobile Responsive - Below 768px */
-@media (max-width: 767px) {
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
     .header-container {
-        padding: 20px;
-        max-width: 100%;
+        padding: 10px;
+        max-width: 90%;
     }
 
     .menu-toggle {
@@ -249,7 +250,7 @@ body{
         top: 0;
         width: 75%;
         height: 100vh;
-        background-color: rgba(8, 9, 32, 0.952);
+        background-color: whitesmoke;
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 0.3s ease;
@@ -266,147 +267,61 @@ body{
         padding: 40px 20px;
     }
 
-    .nav-item {
+    .nav-item{
         padding: 15px 0;
         font-size: 18px;
-        color: #fffdfa;
+        color: #00001a;
         border-bottom: 1px solid #5d5f79;
     }
 
-    /* Hero Section Mobile */
+    li a {
+        color: #00001a;
+    }
+
     .hero-container {
-        padding: 20px;
-        display: grid;
+        padding: 24px;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto;
         gap: 20px;
-        max-width: 100%;
     }
 
     .img-wrapper {
         grid-column: 1;
         grid-row: 1;
-        min-height: 250px;
     }
 
-    .new-card-wrapper {
+    .hero-content {
         grid-column: 1;
         grid-row: 2;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .h1-text {
-        grid-column: 1;
-        grid-row: 3;
+        width: 100%;
         font-size: 28px;
     }
 
     .text-wrapper {
-        grid-column: 1;
-        grid-row: 4;
-    }
-
-    .new {
-        font-size: 32px;
-    }
-
-    /* Rating Section Mobile */
-    .rating-container {
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px;
-        max-width: 100%;
-    }
-
-    .rating-card {
-        flex-direction: row;
-    }
-
-    .rating-img {
-        height: 100px;
-        width: 100px;
-    }
-
-    .rating-h2 {
-        font-size: 32px;
-    }
-
-    .rating-text{
-        gap: 10px;
-    }
-
-    .rating-h4{
-        font-size: 18px;
-    }
-}
-
-/* Tablet Responsive - 768px to 1023px */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .header-container {
-        padding: 20px 30px;
-    }
-
-    .nav-items {
-        gap: 20px;
-    }
-
-    .hero-container {
-        padding: 30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 20px;
-        max-width: 100%;
-    }
-
-    .img-wrapper {
-        grid-column: 1 / -1;
-        min-height: 300px;
+        width: 100%;
     }
 
     .new-card-wrapper {
-        grid-column: 1 / -1;
-    }
-
-    .h1-text {
-        grid-column: 1 / -1;
-        font-size: 32px;
-    }
-
-    .text-wrapper {
-        grid-column: 1 / -1;
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
     }
 
     .rating-container {
+        padding: 24px;
+        gap: 20px;
         flex-direction: column;
-        gap: 30px;
-        padding: 30px;
-        max-width: 100%;
     }
 
-    .rating-img {
-        height: 120px;
-        width: 120px;
-    }
-
-    .rating-text{
-        gap: 15px;
+    .rating-p {
+        width: auto;
     }
 }
-
-/* Desktop - 1024px and above */
-@media (min-width: 1024px) {
-    .header-container {
-        padding: 20px 40px;
-    }
-
-    .hero-container {
-        padding: 40px;
-    }
-
-    .rating-container {
-        padding: 40px;
-    }
-}
-
-
 
