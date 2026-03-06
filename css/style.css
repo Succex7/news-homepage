@@ -325,3 +325,132 @@ body{
     }
 }
 
+/* TABLET SCREEN RESPONSIVENESS */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    .header-container {
+        padding: 20px 10px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 55%;
+        background-color: #fffdfa;
+        padding: 100px 40px 40px;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .nav-item a {
+        font-size: 18px;
+        color: #00001a;
+        font-weight: 600;
+    }
+
+    .hero-container {
+        padding: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+    }
+
+    .img-wrapper {
+        grid-column: 1 / 3; 
+        grid-row: 1;
+    }
+
+    .hero-content {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .h1-text {
+        width: 48%;
+        font-size: 28px;
+    }
+
+    .text-wrapper {
+        width: 48%;
+    }
+
+    .new-card-wrapper {
+        grid-column: 1 / 3; 
+        grid-row: 3;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .new {
+        font-size: 32px;
+        min-width: 80px;
+        padding-left: 18px;
+    }
+
+    .new-card-inner {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        width: 100%;
+    }
+
+    .new-card {
+        flex: 1;
+        border-bottom: none;
+        border-right: #5d5f79 solid 1px;
+        padding: 0 20px;
+    }
+
+    .last-card {
+        border-right: none;
+    }
+
+    .rating-container {
+        padding: 30px;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .rating-card {
+        flex: 1 1 calc(33% - 20px);
+        min-width: 200px;
+    }
+
+    .rating-p {
+        width: auto;
+    }
+
+    .rating-img {
+        height: 120px;
+        width: 90px;
+        object-fit: cover;
+    }
+}
